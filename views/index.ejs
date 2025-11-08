@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Haiku No Kami</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="top">
+    <h1>Haiku No Kami</h1>
+    <h2>"Born in shadows, destined for greatness."</h2>
+    <p style="font-size:1.9rem; margin-top:0.5rem;">
+      A haiku from the streets of Konoha — where pain meets purpose and dreams chase destiny.
+    </p>
+  </div>
+
+  <!-- 🔥 BATTLE MODE BUTTON -->
+  <div style="text-align:center; margin-top:2rem;">
+    <button class="battle">Start Battle</button>
+  </div>
+
+  <!-- ⚔️ BATTLE ARENA SECTION -->
+  <div class="op">
+    <section class="battle-section">
+      <h2 style="color:#ff3c64;">Battle Arena</h2>
+      <div class="battle-grid"></div>
+    </section>
+  </div>
+
+  <!-- 🏆 LEADERBOARD SECTION -->
+  <div class="down">
+    <h2 style="text-align: center;">🏆 All-Time Leaderboard 🏆</h2>
+    <div class="leaderboard">
+      <ol class="leaderboard-list">
+        <% if (Poetry && Poetry.length > 0) { %>
+          <% 
+          // Sort by wins descending and take only top 10
+          const sortedPoetry = Poetry.sort((a, b) => (b.wins || 0) - (a.wins || 0)).slice(0, 10);
+          %>
+          <% for(let i = 0; i < sortedPoetry.length; i++) { %>
+            <li class="leaderboard-item">
+              <div>
+                <strong><%= sortedPoetry[i].character %></strong>
+                <span style="color: #aaa; font-size: 1.3rem;"> — <%= sortedPoetry[i].anime %></span>
+              </div>
+              <span class="score-display">
+                <%= sortedPoetry[i].wins || 0 %> wins
+              </span>
+            </li>
+          <% } %>
+        <% } else { %>
+          <li style="text-align: center; font-size: 1.8rem; color: rgba(255, 255, 255, 0.6);">
+            No battles yet. Be the first to fight!
+          </li>
+        <% } %>
+      </ol>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="main.js"></script>
+</body>
+</html>
