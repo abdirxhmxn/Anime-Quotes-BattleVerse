@@ -23,7 +23,7 @@ You can try out the live application here: [Add your deployment URL]
 
 **Battle Arena in Action**
 
-![Battle Arena](image1.png)
+![Battle Arena](/public/image1.png)
 
 The battle arena shows two characters facing off with their iconic quotes. Each fighter displays their name, anime series, quote, and character image in an elegant card layout. The golden frame styling gives it that championship feel.
 
