@@ -29,7 +29,7 @@ The battle arena shows two characters facing off with their iconic quotes. Each 
 
 **Champion Victory Screen**
 
-![Champion Screen](/public/image2.png)
+![Champion Screen](/public/image02.png)
 
 When you select a winner, they're crowned champion with their updated victory count. The interface celebrates their win with a special display before they face their next challenger.
 
