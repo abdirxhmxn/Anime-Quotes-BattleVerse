@@ -19,6 +19,26 @@ A full-stack web application that combines anime quotes with an interactive batt
 
 You can try out the live application here: [Add your deployment URL]
 
+### Screenshots
+
+**Battle Arena in Action**
+
+![Battle Arena](image1.png)
+
+The battle arena shows two characters facing off with their iconic quotes. Each fighter displays their name, anime series, quote, and character image in an elegant card layout. The golden frame styling gives it that championship feel.
+
+**Champion Victory Screen**
+
+![Champion Screen](image2.png)
+
+When you select a winner, they're crowned champion with their updated victory count. The interface celebrates their win with a special display before they face their next challenger.
+
+**Leaderboard Rankings**
+
+![Leaderboard](image3.png)
+
+The leaderboard tracks the top warriors based on their battle wins. The top three positions get special visual treatment, and you can see at a glance who's dominating the arena.
+
 ### How It Works
 
 The application creates an engaging experience where you become the judge of anime's greatest quotes. When you start a battle, two characters are randomly selected from the database. You read their iconic quotes and decide which one resonates more deeply. The winner earns a victory point and stays in the arena to defend their title against the next challenger.
