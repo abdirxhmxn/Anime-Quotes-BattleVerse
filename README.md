@@ -13,11 +13,6 @@ A full-stack web application that combines anime quotes with an interactive batt
 - **Beautiful UI**: Dark-themed, anime-inspired design with smooth animations
 - **Responsive Design**: Works seamlessly on desktop and mobile devices
 
-## Demo
-
-### Live Application
-
-You can try out the live application here: [Add your deployment URL]
 
 ### Screenshots
 
